@@ -3,6 +3,7 @@
 	<head>
 		<title>Akora</title>
 		<link rel="stylesheet" type="text/css" href="../static/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	</head>
 	<body>
 
@@ -12,9 +13,12 @@
 
 		<ul id='navbar'>
 			<li><a href='/'>Home</a></li>
+			<li><a href='/login'>Login</a></li>
 		</ul>
 
 		<br/>
+
+		{{message}}
 
 		<div class="container">
 			{% block content %}
