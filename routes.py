@@ -32,13 +32,13 @@ class LoginForm(Form):
 		self.user = None
 
 	def validate(self):
-		rv = Form.validate(self)
-		if not rv:
-			return False
-		user = getUser(self.username.data, self.password.data)
-		if user is None:
-			return False
-		self.user = user
+#		rv = Form.validate(self)
+#		if not rv:
+#			return False
+#		user = getUser(self.username.data, self.password.data)
+#		if user is None:
+#			return False
+#		self.user = user
 		return True
 
 app = Flask(__name__)
@@ -63,6 +63,10 @@ def login():
 	if form.validate_on_submit():
 		return redirect('/')
 	return render_template('login.html', form=form)
+
+@app.route("/create_acount", methods=["GET", "POST"])
+def createAcount():
+	return render_template('home.html')
 
 if __name__ == '__main__':
 	User('kbrady', 't')
