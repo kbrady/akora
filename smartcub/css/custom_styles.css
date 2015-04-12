@@ -213,7 +213,7 @@ padding: 10px 5px;
 margin: 10px 5px;
 }
 #msform .action-button:hover, #msform .action-button:focus {
-box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+box-shadow: 0 0 0 2px white, 0 0 0 3px #3caedb;
 }
 /*headings*/
 .fs-title {
@@ -240,7 +240,7 @@ list-style-type: none;
 color: white;
 text-transform: uppercase;
 font-size: 9px;
-width: 33.33%;
+width: 20%;
 float: left;
 position: relative;
 }
